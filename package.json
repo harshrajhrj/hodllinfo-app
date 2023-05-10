@@ -1,0 +1,19 @@
+{
+  "name": "hodlinfo",
+  "version": "1.0.0",
+  "description": "Collect top 10 results from the given api then storesand render them into the web page",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Harsh Raj",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.1.0",
+    "node-fetch": "^3.3.1",
+    "nodemon": "^2.0.22"
+  }
+}

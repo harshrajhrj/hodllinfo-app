@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500&family=Montserrat:400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    /* color: white; */
+}
+
+/* overriding bootstrap starts*/
+dl,
+ol,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.offcanvas {
+    visibility: visible;
+}
+
+.offcanvas.offcanvas-bottom {
+    height: 50vh;
+}
+
+.sticky-top {
+    z-index: 1;
+}
+
+/* overriding bootstrap ends*/
+
+
+/* main container css starts */
+.hdli-container {
+    position: relative;
+    background: #191d28;
+    height: 100%;
+    color: aliceblue;
+}
+
+/* main container css ends */
+
+/* super footer css starts */
+.hdli-super-footer {
+    border: solid 1px #191d28;
+    background-color: #191d28;
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 47px;
+    bottom: 0;
+    z-index: 8;
+}
+
+.hdli-super-footer button:hover {
+    color: #fff;
+}
+
+.hdli-super-footer button {
+    letter-spacing: 1px;
+}
+
+/* super footer css ends */
+
+/* header css starts */
+.hdli-header,
+.hdli-body,
+.hdli-footer {
+    padding: 20px 30px 0px 30px;
+}
+
+.hdli-sub-header {
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row;
+}
+
+.hdli-title {
+    text-align: center;
+    padding: 0 15px 0 15px;
+}
+
+.hdli-title a {
+    letter-spacing: 1px;
+    color: #3dc6c1;
+}
+
+.hdli-header select {
+    padding: 5px;
+    background-color: #2e3241;
+    color: #fff;
+    border-color: #2e3241;
+    font-weight: 500;
+    letter-spacing: .2px;
+    border-radius: 8px;
+}
+
+.hdli-header select:active {
+    background-color: #545b62;
+    border-color: #4e555b;
+}
+
+.hdli-header select:focus {
+    background-color: #545b62;
+    border-color: #4e555b;
+    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, .5)
+}
+
+.hdli-header .hdli-buy a {
+    padding: 5px;
+    background-color: #2e3241;
+    color: #fff;
+    border-color: #2e3241;
+    font-weight: 500;
+    letter-spacing: .2px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hdli-header .hdli-tele-connect a {
+    background: #3dc6c1;
+    color: #fff;
+}
+
+.hdli-header .hdli-bg-toggle {
+    font-size: 28px;
+}
+
+.hdli-header .hdli-bg-toggle input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, .5)
+}
+
+/* progress circle css starts */
+circle {
+    transition: all 1s linear;
+}
+
+.hdli-header #c1 {
+    transition: all 1s linear;
+    stroke: #fff;
+    stroke-width: 3;
+    stroke-linecap: round;
+    fill: transparent;
+}
+
+.hdli-header #c2 {
+    transition: all 1s linear;
+    stroke: #3dc6c1;
+    stroke-width: 3;
+    stroke-linecap: round;
+    fill: transparent;
+}
+
+.hdli-header .hdli-progress .chart-text {
+    fill: #3dc6c1;
+}
+
+#counterText {
+    -webkit-animation: heartBeat 1s infinite;
+    animation: heartBeat 1s infinite;
+}
+
+@-webkit-keyframes heartBeat {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes heartBeat {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* progress circle css ends */
+
+@media (max-width: 564px) {
+    .hdli-header div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+/* header css ends */
+
+/* body css starts */
+.hdli-body {
+    padding-bottom: 50px;
+}
+
+.hdli-sub-body-1,
+.hdli-sub-body-2 {
+    margin: 20px 0 0 0;
+}
+
+.hdli-body .hdli-number {
+    letter-spacing: .6px;
+    color: #3dc6c1;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hdli-body .hdli-mins-text,
+.hdli-body .hdli-hours-text,
+.hdli-body .hdli-one-day-text,
+.hdli-body .hdli-days-text,
+.hdli-body .hdli-price-caption,
+.hdli-body .hdli-average-caption {
+    opacity: .4;
+}
+
+.hdli-body .hdli-mins-text,
+.hdli-body .hdli-hours-text,
+.hdli-body .hdli-one-day-text,
+.hdli-body .hdli-days-text {
+    font-size: 20px;
+}
+
+.hdli-body .hdli-big-number {
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hdli-body .hdli-price-caption {
+    font-size: 28px;
+}
+
+.hdli-body .hdli-average-caption {
+    font-size: 16px;
+}
+
+.hdli-body .hdli-data {
+    width: 100%;
+    height: 100%;
+}
+
+.hdli-body .hdli-list-control {
+    gap: 10px;
+}
+
+.hdli-body li {
+    list-style: none;
+}
+
+.hdli-body li span:nth-child(3),
+.hdli-body li span:nth-child(4),
+.hdli-body li span:nth-child(5),
+.hdli-body li span:nth-child(6) {
+    text-align: center;
+}
+
+.hdli-body .hdli-common {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: .2fr .6fr .7fr .9fr .6fr .3fr;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    line-height: 25px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.hdli-body .hdli-common:not(.hdli-list-header) {
+    background-color: #2e3241;
+}
+
+@media (max-width: 1012px) {
+    .hdli-body .hdli-data {
+        overflow-x: scroll;
+    }
+
+    .hdli-body .hdli-list-control {
+        width: max-content;
+    }
+}
+
+/* body css ends */
+
+/* footer css starts */
+.hdli-footer {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 47px;
+    border-top: 2px solid #2e3241;
+}
+
+.hdli-footer .hdli-sub-footer {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: .5px;
+    color: #888686;
+}
+
+.hdli-footer .hdli-copyright {
+    column-gap: 10px;
+}
+
+.hdli-footer .hdli-copyright a,
+.hdli-footer .hdli-support a {
+    color: #888686;
+}
+
+/* footer css ends */

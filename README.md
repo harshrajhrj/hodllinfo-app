@@ -1,7 +1,7 @@
 # hodllinfo_app
 Analytics of bitcoin currency
 <br/>
-*Include* .env *file inside the main directory and declare* DBURL *as your MongoDB connection link.*
+*Include* `.env` *file inside the main directory and declare* DBURL *as your MongoDB connection link.*
 <br/>
 *Install the dependencies using* npm ci
 <br/>
